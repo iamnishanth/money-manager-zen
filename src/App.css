@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.report-card {
+  height: 200px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-tabs li {
+  cursor: pointer;
+}
+
+.categories-wrapper {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.categories-chip {
+  display: inline-block;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.selected-chip {
+  background-color: #ddd;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+table {
+  table-layout: fixed;
+}
+
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 992px) {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .report-card {
+    height: fit-content;
+    padding: 20px;
+  }
+}
+
+.heading-container {
+  height: 400px;
+  display: grid;
+  align-items: center;
+}
+
+/* Login */
+
+.form-signin {
+  width: 100%;
+  min-width: 400px;
+  padding: 15px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin :focus {
+  box-shadow: none;
+}
+
+.form-cta {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.form-cta p {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .form-signin {
+    min-width: 96vw;
+  }
+}
